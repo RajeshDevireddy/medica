@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Content-Package-Id: my_packages:Tabs Example
+Content-Package-Roots: /libs/core/wcm/components/text/v2/text/cq:dialog
+Content-Package-Type: application
+

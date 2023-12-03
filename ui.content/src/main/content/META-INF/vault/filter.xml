@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/medica" mode="merge"/>
+    <filter root="/content/medica" mode="merge"/>
+    <filter root="/content/dam/medica" mode="merge">
+        <exclude pattern="/content/dam/medica(/.*)?"/>
+        <include pattern="/content/dam/medica/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/medica/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/medica" mode="merge"/>
+</workspaceFilter>

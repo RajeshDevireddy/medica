@@ -1,0 +1,67 @@
+<sly data-sly-use.footer = "com.medica.core.models.FooterModel">
+<div class="home-footer">
+    <div class="home-left1">
+      <div class="home-brand">
+        <img
+          alt="image"
+          src="${footer.logo}"
+          class="home-image32"
+        />
+        <p class="home-text92">
+          ${footer.description}
+        </p>
+      </div>
+      <div class="home-socials">
+        <div class="social">
+          <img
+            alt="image"
+            src="${footer.linkedIn}"
+            class="home-image33"
+          />
+        </div>
+        <div class="social">
+          <img
+            alt="image"
+            src="${footer.instagram}"
+            class="home-image34"
+          />
+        </div>
+        <div class="social">
+          <img
+            alt="image"
+            src="${footer.twitter}"
+            class="home-image35"
+          />
+        </div>
+      </div>
+      <div class="home-legal">
+        <span class="home-copyright">
+          © 2023 Medica. All Rights Reserved.
+        </span>
+        <span class="legal-link">Privacy Policy</span>
+        <span class="legal-link">Terms of Use</span>
+      </div>
+    </div>
+    <div class="home-right1">
+      <sly data-sly-list.footerItems = ${footer.footer} >
+      <div class="home-list3">
+        <span class="home-header16">${footerItems.sectionName}</span>
+        <div class="home-links1">
+          <sly data-sly-list.footerLinks = ${footerItems.footerLinks} >
+          <span class="home-link04">${footerLinks.linkText}</span>
+        </sly>
+        </div>
+      </div>
+    </sly>
+    </div>
+    <div class="home-legal1">
+      <div class="home-row3">
+        <span class="legal-link">Privacy Policy</span>
+        <span class="legal-link">Terms of Use</span>
+      </div>
+      <span class="home-copyright5">
+        © 2022 finbest. All Rights Reserved.
+      </span>
+    </div>
+  </div>
+</sly>

@@ -1,0 +1,25 @@
+<sly data-sly-use.model="com.medica.core.models.ImageModel">
+<section class="home-features1">
+    <sly data-sly-list.images="${model.imageDetails}">
+    <sly data-sly-test.imageStyle = "${images.imageAlignment == 'right'}"> </sly>
+    <div class="${imageStyle ? 'home-section6' : 'home-section7'}">
+        <div class="${imageStyle ? 'home-content04' : 'home-content05'}">
+            <div class="${imageStyle ? 'home-header12' : 'home-header13'}">
+                <h2 class="${imageStyle ? 'home-heading10' : 'home-heading11'}">
+                    ${images.caption}
+                </h2>
+                <p class="${imageStyle ? 'home-capton' : 'home-capton1'}">
+                    ${images.description @context='html'}
+                </p>
+            </div>
+            <div class="read-more">
+                <span class="${imageStyle ? 'home-text17' : 'home-text18'}">${images.linkText}</span>
+                <img alt="image" src="/content/dam/medica/arrow-2.svg" class="${imageStyle ? 'home-image14' : 'home-image16'}">
+            </div>
+        </div>
+        <img alt="image" src="${images.fileReference}" class="${imageStyle ? 'home-image15' : 'home-image17'}">
+    </div>
+    </sly>
+
+</section>
+</sly>

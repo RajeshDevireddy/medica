@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0"
+    jcr:created="{Date}2023-11-27T15:20:46.250+05:30"
+    jcr:createdBy="admin"
+    jcr:description="\0"
+    jcr:lastModified="{Date}2023-11-27T15:20:46.250+05:30"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="1"
+    builtWith="Adobe Experience Manager-2023.11.14227.20231108T162349Z"
+    group="my_packages"
+    lastUnwrapped="{Date}2023-11-27T15:20:46.250+05:30"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2023-11-27T15:20:46.250+05:30"
+    lastWrappedBy="admin"
+    name="Tabs Example"
+    version="\0">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            propertyRules="[]"
+            root="/libs/core/wcm/components/text/v2/text/cq:dialog"
+            rules="[]"/>
+    </filter>
+</jcr:root>

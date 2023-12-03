@@ -1,0 +1,17 @@
+<sly data-sly-use.hero="com.medica.core.models.HeroModel">
+  <div class="home-main">
+    <div class="home-content">
+      <div class="home-heading07">
+        <h1 class="home-header07">${hero.title}</h1>
+        <p class="home-caption6"> ${hero.description}</p>
+      </div>
+      <button class="button button-main home-book2">
+        <img alt="image" src="${hero.appointmentButtonIcon}" class="home-image">
+        <span>${hero.appointmentLinktext}</span>
+      </button>
+    </div>
+    <div class="home-image11">
+      <img alt="image" src="${hero.image}" class="home-image12">
+    </div>
+  </div>
+</sly>

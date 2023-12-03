@@ -1,0 +1,20 @@
+<sly data-sly-use.features="com.medica.core.models.FeaturesContainerModel">
+  <div id="features" class="home-features">
+    <div class="home-content01">
+      <sly data-sly-list.feature = "${features.features}">
+        <div class="features-section quick-links">
+          <div class="features-heading">
+            <h3 class="features-header">
+              <span>${feature.featureLinkText}</span>
+            </h3>
+            <img alt="image" src="${feature.icon}" class="features-icon">
+          </div>
+          <p class="features-text">
+          <span>${feature.featureDescription}</span>
+          </p>
+          <div class="features-divider"></div>
+        </div>
+      </sly>
+    </div>
+  </div>
+</sly>

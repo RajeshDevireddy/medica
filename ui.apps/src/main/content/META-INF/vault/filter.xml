@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/medica/clientlibs"/>
+    <filter root="/apps/medica/components"/>
+    <filter root="/apps/medica/i18n"/>
+</workspaceFilter>

@@ -1,0 +1,33 @@
+<sly data-sly-use.practices="com.medica.core.models.PracticesModel">
+<section class="home-practices1">
+  <div class="home-heading08">
+    <h2 class="home-text14">${practices.practiceTitle}</h2>
+    <p class="home-text15">${practices.practiceDescription}</p>
+  </div>
+  <div class="home-content02">
+    <div class="home-grid1">
+      <sly data-sly-list.item="${practices.practices}">
+      <a href="${item.readMoreLink}">
+        <div class="home-practice-wrapper">
+          <div class="practice-practice">
+            <div class="practice-heading">
+              <h3 class="practice-header"><span>${item.specialityName}</span></h3>
+              <p class="practice-caption">
+                  <span>${item.specialityDescription}</span>
+              </p>
+            </div>
+            <div class="read-more">
+              <span class="practice-text">${item.readMoreLinkText}</span>
+              <img alt="image" src="/content/dam/medica/arrow-2.svg" class="practice-image">
+            </div>
+          </div>
+        </div>
+      </a>
+      </sly>
+    </div>
+    <button data-open="practices" class="button button-main">
+      <span>${practices.showMoreLinkText}</span>
+    </button>
+  </div>
+</section>
+</sly>

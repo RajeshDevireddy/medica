@@ -1,0 +1,21 @@
+<sly data-sly-use.model="com.medica.core.models.TextImageModel">
+<section id="how-it-works" class="home-why">
+  <div class="home-heading09">
+    <h2 class="home-header08">${model.title}</h2>
+    <p class="home-header09">
+      ${model.description}
+    </p>
+  </div>
+  <div class="home-content03">
+    <div class="home-video">
+      <video src="" poster="${model.image}" class="home-video1"></video>
+      <div class="home-play">
+        <img alt="image" src="/content/dam/medica/play.svg" class="home-image13">
+      </div>
+    </div>
+    <div class="home-caption7">
+      ${model.rte @context='html'}
+    </div>
+  </div>
+</section>
+</sly>

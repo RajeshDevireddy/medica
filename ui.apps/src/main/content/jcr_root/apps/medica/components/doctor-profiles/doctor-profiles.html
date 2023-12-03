@@ -1,0 +1,38 @@
+<sly data-sly-use.model="com.medica.core.models.DoctorProfilesModel">
+<section class="home-meet">
+  <div class="home-heading18">
+    <h2 class="home-text81">${model.title}</h2>
+    <p class="home-text82">
+      ${model.description}.
+    </p>
+  </div>
+  <div class="home-list1">
+    <div class="home-controls">
+      <img alt="image" src="/content/dam/medica/circle-arrow.svg" data-doctors="previous" class="arrow">
+      <img alt="image" src="/content/dam/medica/circle-arrow.svg" data-doctors="next" class="home-forward arrow">
+    </div>
+    <div data-teleport="doctors" class="home-doctors">
+      <sly data-sly-list.doctor="${model.doctors}">
+      <div class="doctor-doctor">
+        <img alt="image" src="${doctor.fileReference}" class="doctor-image">
+        <div class="doctor-heading">
+          <h2 class="doctor-text"><span>${doctor.doctorName}</span></h2>
+          <p class="doctor-text1">
+                    <span>
+                      ${doctor.doctorDescription}
+                    </span>
+          </p>
+        </div>
+      </div>
+      </sly>
+
+    </div>
+  </div>
+  <div class="home-search1">
+    <input type="text" placeholder="Search by name" class="home-textinput5 input book-input">
+    <button class="button button-main home-book7">
+      <span>${model.searchButtonName}</span>
+    </button>
+  </div>
+</section>
+</sly>

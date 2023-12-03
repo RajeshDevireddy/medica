@@ -1,0 +1,22 @@
+<sly data-sly-use.model="com.medica.core.models.MobileLinksModel">
+<div class="home-download">
+  <div class="home-main1">
+    <img alt="image" src="${model.fileReference}" class="home-image29">
+    <div class="home-content12">
+      <h2 class="home-text89">
+        ${model.title}
+      </h2>
+      <div class="home-buttons">
+        <button class="home-i-os button button-main">
+          <img alt="image" src="${model.iosIcon}" class="home-image30">
+          <span>${model.iosLinkText}</span>
+        </button>
+        <button class="button button-main home-android">
+          <img alt="image" src="${model.androidIcon}" class="home-image31">
+          <span>${model.androidLinkText}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</sly>

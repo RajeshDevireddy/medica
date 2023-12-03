@@ -1,0 +1,22 @@
+<sly data-sly-use.model="com.medica.core.models.ScheduleModel">
+<section id="schedule" class="home-schedule">
+  <div class="home-content07">
+    <div class="home-header15">
+      <h2 class="home-heading13">
+        ${model.scheduleTitle}
+      </h2>
+      <p class="home-caption8">
+        ${model.scheduleDescription}
+      </p>
+    </div>
+    <div class="home-types">
+      <a href="${model.inPersonLink}" class="home-book-person button button-main button-white">
+        <span>${model.inPersonLinkText}</span>
+      </a>
+      <button class="button button-main button-white home-book-person1">
+        <span>${model.virtualLinkText}</span>
+      </button>
+    </div>
+  </div>
+</section>
+</sly>
